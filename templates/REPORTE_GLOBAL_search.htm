@@ -1,0 +1,782 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_searchpage}
+<div {$searchpage_chiddenattr} data-pageid="{$pageid}" data-container="searchpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN searchheader}
+	<h2 {$bssearchheader_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchheader" >{$pagetitlelabel REPORTE_GLOBAL search}</h2>
+
+{END searchheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_searchpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$bssearchfields_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchfields" class="form-horizontal" role="form">
+<div class="container">
+	<div class="form-group">
+		<div class="col-md-12" >
+			&nbsp;
+		</div>
+	</div>
+</div>
+	{BEGIN PROPIETARIO_CEDULA_fieldblock}		
+	<div class="container {$fielddispclass_PROPIETARIO_CEDULA}" data-fieldname="PROPIETARIO_CEDULA">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL PROPIETARIO_CEDULA}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_PROPIETARIO_CEDULA}
+			</div>
+			<div class="col-md-4" >
+				{$PROPIETARIO_CEDULA_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PROPIETARIO_CEDULA_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PROPIETARIO_CEDULA_fieldblock}
+	{BEGIN NOMBRE_fieldblock}		
+	<div class="container {$fielddispclass_NOMBRE}" data-fieldname="NOMBRE">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL NOMBRE}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_NOMBRE}
+			</div>
+			<div class="col-md-4" >
+				{$NOMBRE_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$NOMBRE_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END NOMBRE_fieldblock}
+	{BEGIN VEREDA_fieldblock}		
+	<div class="container {$fielddispclass_VEREDA}" data-fieldname="VEREDA">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL VEREDA}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_VEREDA}
+			</div>
+			<div class="col-md-4" >
+				{$VEREDA_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$VEREDA_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END VEREDA_fieldblock}
+	{BEGIN FINCA_fieldblock}		
+	<div class="container {$fielddispclass_FINCA}" data-fieldname="FINCA">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL FINCA}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_FINCA}
+			</div>
+			<div class="col-md-4" >
+				{$FINCA_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$FINCA_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END FINCA_fieldblock}
+	{BEGIN AREA_FINCA_fieldblock}		
+	<div class="container {$fielddispclass_AREA_FINCA}" data-fieldname="AREA_FINCA">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL AREA_FINCA}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_AREA_FINCA}
+			</div>
+			<div class="col-md-4" >
+				{$AREA_FINCA_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$AREA_FINCA_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END AREA_FINCA_fieldblock}
+	{BEGIN LINEA_PRINCIPAL_fieldblock}		
+	<div class="container {$fielddispclass_LINEA_PRINCIPAL}" data-fieldname="LINEA_PRINCIPAL">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL LINEA_PRINCIPAL}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_LINEA_PRINCIPAL}
+			</div>
+			<div class="col-md-4" >
+				{$LINEA_PRINCIPAL_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$LINEA_PRINCIPAL_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END LINEA_PRINCIPAL_fieldblock}
+	{BEGIN AREA__L_P_fieldblock}		
+	<div class="container {$fielddispclass_AREA__L_P}" data-fieldname="AREA__L_P">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL AREA__L_P}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_AREA__L_P}
+			</div>
+			<div class="col-md-4" >
+				{$AREA__L_P_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$AREA__L_P_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END AREA__L_P_fieldblock}
+	{BEGIN A_O_fieldblock}		
+	<div class="container {$fielddispclass_A_O}" data-fieldname="A_O">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL A_O}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_A_O}
+			</div>
+			<div class="col-md-4" >
+				{$A_O_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$A_O_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END A_O_fieldblock}
+	{BEGIN LINEAS_AGRARIAS_fieldblock}		
+	<div class="container {$fielddispclass_LINEAS_AGRARIAS}" data-fieldname="LINEAS_AGRARIAS">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL LINEAS_AGRARIAS}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_LINEAS_AGRARIAS}
+			</div>
+			<div class="col-md-4" >
+				{$LINEAS_AGRARIAS_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$LINEAS_AGRARIAS_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END LINEAS_AGRARIAS_fieldblock}
+	{BEGIN VARIEDAD_fieldblock}		
+	<div class="container {$fielddispclass_VARIEDAD}" data-fieldname="VARIEDAD">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL VARIEDAD}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_VARIEDAD}
+			</div>
+			<div class="col-md-4" >
+				{$VARIEDAD_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$VARIEDAD_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END VARIEDAD_fieldblock}
+	{BEGIN AREA_fieldblock}		
+	<div class="container {$fielddispclass_AREA}" data-fieldname="AREA">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL AREA}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_AREA}
+			</div>
+			<div class="col-md-4" >
+				{$AREA_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$AREA_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END AREA_fieldblock}
+	{BEGIN PRODUCCION_ANUAL_fieldblock}		
+	<div class="container {$fielddispclass_PRODUCCION_ANUAL}" data-fieldname="PRODUCCION_ANUAL">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL PRODUCCION_ANUAL}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_PRODUCCION_ANUAL}
+			</div>
+			<div class="col-md-4" >
+				{$PRODUCCION_ANUAL_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PRODUCCION_ANUAL_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PRODUCCION_ANUAL_fieldblock}
+	{BEGIN A_O1_fieldblock}		
+	<div class="container {$fielddispclass_A_O1}" data-fieldname="A_O1">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL A_O1}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_A_O1}
+			</div>
+			<div class="col-md-4" >
+				{$A_O1_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$A_O1_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END A_O1_fieldblock}
+	{BEGIN VARIEDAD_AGRICOLA_fieldblock}		
+	<div class="container {$fielddispclass_VARIEDAD_AGRICOLA}" data-fieldname="VARIEDAD_AGRICOLA">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL VARIEDAD_AGRICOLA}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_VARIEDAD_AGRICOLA}
+			</div>
+			<div class="col-md-4" >
+				{$VARIEDAD_AGRICOLA_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$VARIEDAD_AGRICOLA_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END VARIEDAD_AGRICOLA_fieldblock}
+	{BEGIN AREA1_fieldblock}		
+	<div class="container {$fielddispclass_AREA1}" data-fieldname="AREA1">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL AREA1}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_AREA1}
+			</div>
+			<div class="col-md-4" >
+				{$AREA1_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$AREA1_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END AREA1_fieldblock}
+	{BEGIN PRODUCCION_ANUAL1_fieldblock}		
+	<div class="container {$fielddispclass_PRODUCCION_ANUAL1}" data-fieldname="PRODUCCION_ANUAL1">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL PRODUCCION_ANUAL1}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_PRODUCCION_ANUAL1}
+			</div>
+			<div class="col-md-4" >
+				{$PRODUCCION_ANUAL1_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PRODUCCION_ANUAL1_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PRODUCCION_ANUAL1_fieldblock}
+	{BEGIN A_O2_fieldblock}		
+	<div class="container {$fielddispclass_A_O2}" data-fieldname="A_O2">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL A_O2}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_A_O2}
+			</div>
+			<div class="col-md-4" >
+				{$A_O2_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$A_O2_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END A_O2_fieldblock}
+	{BEGIN RAZA_PECUARIO_fieldblock}		
+	<div class="container {$fielddispclass_RAZA_PECUARIO}" data-fieldname="RAZA_PECUARIO">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL RAZA_PECUARIO}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_RAZA_PECUARIO}
+			</div>
+			<div class="col-md-4" >
+				{$RAZA_PECUARIO_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RAZA_PECUARIO_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RAZA_PECUARIO_fieldblock}
+	{BEGIN U_A_fieldblock}		
+	<div class="container {$fielddispclass_U_A}" data-fieldname="U_A">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL U_A}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_U_A}
+			</div>
+			<div class="col-md-4" >
+				{$U_A_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$U_A_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END U_A_fieldblock}
+	{BEGIN AREA2_fieldblock}		
+	<div class="container {$fielddispclass_AREA2}" data-fieldname="AREA2">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL AREA2}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_AREA2}
+			</div>
+			<div class="col-md-4" >
+				{$AREA2_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$AREA2_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END AREA2_fieldblock}
+	{BEGIN PRODUCCION_ANUAL2_fieldblock}		
+	<div class="container {$fielddispclass_PRODUCCION_ANUAL2}" data-fieldname="PRODUCCION_ANUAL2">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL PRODUCCION_ANUAL2}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_PRODUCCION_ANUAL2}
+			</div>
+			<div class="col-md-4" >
+				{$PRODUCCION_ANUAL2_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PRODUCCION_ANUAL2_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PRODUCCION_ANUAL2_fieldblock}
+	{BEGIN A_O3_fieldblock}		
+	<div class="container {$fielddispclass_A_O3}" data-fieldname="A_O3">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL A_O3}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_A_O3}
+			</div>
+			<div class="col-md-4" >
+				{$A_O3_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$A_O3_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END A_O3_fieldblock}
+	{BEGIN VARIEDAD_HORTIFRUTICOLA_fieldblock}		
+	<div class="container {$fielddispclass_VARIEDAD_HORTIFRUTICOLA}" data-fieldname="VARIEDAD_HORTIFRUTICOLA">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL VARIEDAD_HORTIFRUTICOLA}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_VARIEDAD_HORTIFRUTICOLA}
+			</div>
+			<div class="col-md-4" >
+				{$VARIEDAD_HORTIFRUTICOLA_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$VARIEDAD_HORTIFRUTICOLA_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END VARIEDAD_HORTIFRUTICOLA_fieldblock}
+	{BEGIN AREA3_fieldblock}		
+	<div class="container {$fielddispclass_AREA3}" data-fieldname="AREA3">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL AREA3}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_AREA3}
+			</div>
+			<div class="col-md-4" >
+				{$AREA3_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$AREA3_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END AREA3_fieldblock}
+	{BEGIN PRODUCCION_ANUAL3_fieldblock}		
+	<div class="container {$fielddispclass_PRODUCCION_ANUAL3}" data-fieldname="PRODUCCION_ANUAL3">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL PRODUCCION_ANUAL3}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_PRODUCCION_ANUAL3}
+			</div>
+			<div class="col-md-4" >
+				{$PRODUCCION_ANUAL3_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PRODUCCION_ANUAL3_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PRODUCCION_ANUAL3_fieldblock}
+	{BEGIN A_O4_fieldblock}		
+	<div class="container {$fielddispclass_A_O4}" data-fieldname="A_O4">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL A_O4}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_A_O4}
+			</div>
+			<div class="col-md-4" >
+				{$A_O4_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$A_O4_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END A_O4_fieldblock}
+	{BEGIN TENENCIA_LEGAL_fieldblock}		
+	<div class="container {$fielddispclass_TENENCIA_LEGAL}" data-fieldname="TENENCIA_LEGAL">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL TENENCIA_LEGAL}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_TENENCIA_LEGAL}
+			</div>
+			<div class="col-md-4" >
+				{$TENENCIA_LEGAL_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TENENCIA_LEGAL_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TENENCIA_LEGAL_fieldblock}
+	{BEGIN SOPORTE_fieldblock}		
+	<div class="container {$fielddispclass_SOPORTE}" data-fieldname="SOPORTE">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL SOPORTE}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_SOPORTE}
+			</div>
+			<div class="col-md-4" >
+				{$SOPORTE_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$SOPORTE_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END SOPORTE_fieldblock}
+	{BEGIN RUAT_fieldblock}		
+	<div class="container {$fielddispclass_RUAT}" data-fieldname="RUAT">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL RUAT}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_RUAT}
+			</div>
+			<div class="col-md-4" >
+				{$RUAT_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$RUAT_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END RUAT_fieldblock}
+	{BEGIN ASOCIACION_fieldblock}		
+	<div class="container {$fielddispclass_ASOCIACION}" data-fieldname="ASOCIACION">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL ASOCIACION}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_ASOCIACION}
+			</div>
+			<div class="col-md-4" >
+				{$ASOCIACION_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$ASOCIACION_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END ASOCIACION_fieldblock}
+	{BEGIN OBSERVACIONES_fieldblock}		
+	<div class="container {$fielddispclass_OBSERVACIONES}" data-fieldname="OBSERVACIONES">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL OBSERVACIONES}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_OBSERVACIONES}
+			</div>
+			<div class="col-md-4" >
+				{$OBSERVACIONES_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$OBSERVACIONES_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END OBSERVACIONES_fieldblock}
+	{BEGIN A_O5_fieldblock}		
+	<div class="container {$fielddispclass_A_O5}" data-fieldname="A_O5">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL A_O5}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_A_O5}
+			</div>
+			<div class="col-md-4" >
+				{$A_O5_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$A_O5_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END A_O5_fieldblock}
+	{BEGIN TIPO_INVERSION_fieldblock}		
+	<div class="container {$fielddispclass_TIPO_INVERSION}" data-fieldname="TIPO_INVERSION">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL TIPO_INVERSION}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_TIPO_INVERSION}
+			</div>
+			<div class="col-md-4" >
+				{$TIPO_INVERSION_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TIPO_INVERSION_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TIPO_INVERSION_fieldblock}
+	{BEGIN NOMBRE_PROYECTO_fieldblock}		
+	<div class="container {$fielddispclass_NOMBRE_PROYECTO}" data-fieldname="NOMBRE_PROYECTO">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL NOMBRE_PROYECTO}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_NOMBRE_PROYECTO}
+			</div>
+			<div class="col-md-4" >
+				{$NOMBRE_PROYECTO_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$NOMBRE_PROYECTO_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END NOMBRE_PROYECTO_fieldblock}
+	{BEGIN OBSERVACIONES1_fieldblock}		
+	<div class="container {$fielddispclass_OBSERVACIONES1}" data-fieldname="OBSERVACIONES1">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL OBSERVACIONES1}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_OBSERVACIONES1}
+			</div>
+			<div class="col-md-4" >
+				{$OBSERVACIONES1_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$OBSERVACIONES1_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END OBSERVACIONES1_fieldblock}
+	{BEGIN A_O6_fieldblock}		
+	<div class="container {$fielddispclass_A_O6}" data-fieldname="A_O6">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label REPORTE_GLOBAL A_O6}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_A_O6}
+			</div>
+			<div class="col-md-4" >
+				{$A_O6_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$A_O6_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END A_O6_fieldblock}
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-4"> 
+
+{BEGIN searchbuttons}
+{BEGIN search_button}
+<button class="btn btn-primary" {$searchbutton_attrs}>Buscar</button>
+{END search_button} 
+{BEGIN reset_button}
+<button class="btn btn-default" {$resetbutton_attrs}>Reiniciar</button>
+{END reset_button}
+{BEGIN back_button}
+<button class="btn btn-default" {$backbutton_attrs}>Volver a la lista</button>
+{END back_button}
+{END searchbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

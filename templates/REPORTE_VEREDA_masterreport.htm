@@ -1,0 +1,60 @@
+<div {$pageattrs}>
+
+{BEGIN container_column}
+<div class="rnr-c rnr-ch rnr-c-column">
+
+{BEGIN masterlist_title}
+<div  class="style1 rnr-bl rnr-b-masterlistheader {$brickclass_masterlistheader}"><span>{$pagetitlelabel REPORTE_VEREDA masterreport}</span></div>
+{END masterlist_title}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_column}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+	<style>
+	.bs-gridcell[data-field=VEREDA]:before {
+		content: "{$label REPORTE_VEREDA VEREDA}";
+	}
+	.bs-gridcell[data-field=LINEA_PRINCIPAL]:before {
+		content: "{$label REPORTE_VEREDA LINEA_PRINCIPAL}";
+	}
+	.bs-gridcell[data-field=AREA_LINEA]:before {
+		content: "{$label REPORTE_VEREDA AREA_LINEA}";
+	}
+	.bs-gridcell[data-field=A_O]:before {
+		content: "{$label REPORTE_VEREDA A_O}";
+	}
+</style>
+<table {$masterlistgrid_hiddenattr} data-pageid="{$pageid}" data-brick="masterlistgrid" class="table rnr-b-mastergridfields rnr-gridtable bs-flexgrid" >
+		<thead>
+		<tr>
+			<th class="{$VEREDA_class}">{$label REPORTE_VEREDA VEREDA}</th>
+			<th class="{$LINEA_PRINCIPAL_class}">{$label REPORTE_VEREDA LINEA_PRINCIPAL}</th>
+			<th class="{$AREA_LINEA_class}">{$label REPORTE_VEREDA AREA_LINEA}</th>
+			<th class="{$A_O_class}">{$label REPORTE_VEREDA A_O}</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td class="{$VEREDA_class} bs-gridcell" data-field=VEREDA>{$VEREDA_mastervalue}</td>
+			<td class="{$LINEA_PRINCIPAL_class} bs-gridcell" data-field=LINEA_PRINCIPAL>{$LINEA_PRINCIPAL_mastervalue}</td>
+			<td class="{$AREA_LINEA_class} bs-gridcell" data-field=AREA_LINEA>{$AREA_LINEA_mastervalue}</td>
+			<td class="{$A_O_class} bs-gridcell" data-field=A_O>{$A_O_mastervalue}</td>
+		</tr>
+	</tbody>
+
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>

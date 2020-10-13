@@ -1,0 +1,333 @@
+<!DOCTYPE html><p align=center><font size=+1 color=red>This website was created by evaluation version of PHPRunner Trial.</font></p>
+<p align=center><font size=+1 color=red>This warning message will not appear on website created by a paid-for version of PHPRunner Trial.</font></p>
+<HTML {$html_attrs}>
+  <HEAD>
+    <META http-equiv="X-UA-Compatible" content="IE=Edge">
+    <META name="viewport" content="width=device-width, initial-scale=1.0">
+    <TITLE>
+      {$pagetitle}
+    </TITLE>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <LINK href="styles/default.css" rel="stylesheet" type="text/css">
+    {BEGIN rtlCSS}
+      <LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">
+    {END rtlCSS}
+    {BEGIN styleCSSFiles}
+      <LINK href="{$stylepath}" rel="stylesheet" type="text/css">
+    {END styleCSSFiles}
+    <META name="GENERATOR" content="MSHTML 11.00.10570.1001">
+  </HEAD>
+  <BODY class="{$stylename} function-edit" {$bodyattrs}>
+    {BEGIN body}
+      {$header}
+      <STYLE>
+        {$containerCss}
+      </STYLE>
+      <DIV class="bs-top">
+        {BEGIN container_editpage}
+          <DIV class="container" data-container="editpage" data-pageid="{$pageid}" {$editpage_chiddenattr}>
+            {BEGIN container_header}
+              <DIV class="col-md-9 col-md-offset-3" data-container="header" data-pageid="{$pageid}" {$header_chiddenattr}>
+                {BEGIN editheader}
+                  <H2 data-brick="editheader" data-pageid="{$pageid}" {$editheader_hiddenattr}>
+                    {$pagetitlelabel propietario edit}
+                  </H2>
+                {END editheader}
+              </DIV>
+            {END container_header}
+            {BEGIN container_message}
+              <DIV class="col-md-6 col-md-offset-3" data-container="message" data-pageid="{$pageid}" {$message_chiddenattr}>
+                {BEGIN message_block}
+                  <DIV class="alert {$message_class}" role="alert" data-brick="message" data-pageid="{$pageid}" {$message_hiddenattr}>
+                    <H5>
+                      {$message}
+                    </H5>
+                    <DIV>
+                      {BEGIN back_button}
+                        <BUTTON class="btn btn-sm btn-default" {$backbutton_attrs}>
+                          Volver a la lista
+                        </BUTTON>
+                      {END back_button}
+                      {BEGIN view_page_button}
+                        <BUTTON class="btn btn-sm btn-default" {$view_page_button_attrs}>
+                          Ver
+                        </BUTTON>
+                      {END view_page_button}
+                      {BEGIN edit_page_button}
+                        <BUTTON class="btn btn-sm btn-default" {$edit_page_button_attrs}>
+                          Editar
+                        </BUTTON>
+                      {END edit_page_button}
+                    </DIV>
+                  </DIV>
+                {END message_block}
+              </DIV>
+            {END container_message}
+          </DIV>
+        {END container_editpage}
+        {BEGIN container_fields}
+          <DIV class="col-md-12" data-container="fields" data-pageid="{$pageid}" {$fields_chiddenattr}>
+            <DIV class="form-horizontal" role="form" data-brick="editfields" data-pageid="{$pageid}" {$editfields_hiddenattr}>
+              {BEGIN CEDULA_fieldblock}
+                <DIV class="container">
+                  <DIV class="form-group {$fielddispclass_CEDULA}" data-signal-error-for="CEDULA{$id}" data-fieldname="CEDULA">
+                    <LABEL class="col-md-3 control-label" for="{$labelfor_CEDULA}">
+                      {BEGIN CEDULA_label}
+                        {$label propietario CEDULA}
+                      {END CEDULA_label}
+                    </LABEL>
+                    <DIV class="col-md-6">
+                      {$CEDULA_editcontrol}
+                    </DIV>
+                    <DIV class="col-md-3 help-block" data-helpfor="CEDULA">
+                      <DIV class="text-muted">
+                        {$tooltip propietario CEDULA}
+                      </DIV>
+                    </DIV>
+                  </DIV>
+                </DIV>
+              {END CEDULA_fieldblock}
+              {BEGIN NOMBRE_fieldblock}
+                <DIV class="container">
+                  <DIV class="form-group {$fielddispclass_NOMBRE}" data-signal-error-for="NOMBRE{$id}" data-fieldname="NOMBRE">
+                    <LABEL class="col-md-3 control-label" for="{$labelfor_NOMBRE}">
+                      {BEGIN NOMBRE_label}
+                        {$label propietario NOMBRE}
+                      {END NOMBRE_label}
+                    </LABEL>
+                    <DIV class="col-md-6">
+                      {$NOMBRE_editcontrol}
+                    </DIV>
+                    <DIV class="col-md-3 help-block" data-helpfor="NOMBRE">
+                      <DIV class="text-muted">
+                        {$tooltip propietario NOMBRE}
+                      </DIV>
+                    </DIV>
+                  </DIV>
+                </DIV>
+              {END NOMBRE_fieldblock}
+              {BEGIN TELEFONO_fieldblock}
+                <DIV class="container">
+                  <DIV class="form-group {$fielddispclass_TELEFONO}" data-signal-error-for="TELEFONO{$id}" data-fieldname="TELEFONO">
+                    <LABEL class="col-md-3 control-label" for="{$labelfor_TELEFONO}">
+                      {BEGIN TELEFONO_label}
+                        {$label propietario TELEFONO}
+                      {END TELEFONO_label}
+                    </LABEL>
+                    <DIV class="col-md-6">
+                      {$TELEFONO_editcontrol}
+                    </DIV>
+                    <DIV class="col-md-3 help-block" data-helpfor="TELEFONO">
+                      <DIV class="text-muted">
+                        {$tooltip propietario TELEFONO}
+                      </DIV>
+                    </DIV>
+                  </DIV>
+                </DIV>
+              {END TELEFONO_fieldblock}
+              {BEGIN F_NACIMIENTO_fieldblock}
+                <DIV class="container">
+                  <DIV class="form-group {$fielddispclass_F_NACIMIENTO}" data-signal-error-for="F_NACIMIENTO{$id}" data-fieldname="F_NACIMIENTO">
+                    <LABEL class="col-md-3 control-label" for="{$labelfor_F_NACIMIENTO}">
+                      {BEGIN F_NACIMIENTO_label}
+                        {$label propietario F_NACIMIENTO}
+                      {END F_NACIMIENTO_label}
+                    </LABEL>
+                    <DIV class="col-md-6">
+                      {$F_NACIMIENTO_editcontrol}
+                    </DIV>
+                    <DIV class="col-md-3 help-block" data-helpfor="F_NACIMIENTO">
+                      <DIV class="text-muted">
+                        {$tooltip propietario F_NACIMIENTO}
+                      </DIV>
+                    </DIV>
+                  </DIV>
+                </DIV>
+              {END F_NACIMIENTO_fieldblock}
+              {BEGIN E_CIVIL_fieldblock}
+                <DIV class="container">
+                  <DIV class="form-group {$fielddispclass_E_CIVIL}" data-signal-error-for="E_CIVIL{$id}" data-fieldname="E_CIVIL">
+                    <LABEL class="col-md-3 control-label" for="{$labelfor_E_CIVIL}">
+                      {BEGIN E_CIVIL_label}
+                        {$label propietario E_CIVIL}
+                      {END E_CIVIL_label}
+                    </LABEL>
+                    <DIV class="col-md-6">
+                      {$E_CIVIL_editcontrol}
+                    </DIV>
+                    <DIV class="col-md-3 help-block" data-helpfor="E_CIVIL">
+                      <DIV class="text-muted">
+                        {$tooltip propietario E_CIVIL}
+                      </DIV>
+                    </DIV>
+                  </DIV>
+                </DIV>
+              {END E_CIVIL_fieldblock}
+{BEGIN NOMBRE_PARIENTE_fieldblock}
+                <DIV class="container">
+                  <DIV class="form-group {$fielddispclass_NOMBRE_PARIENTE}" data-signal-error-for="NOMBRE_PARIENTE{$id}" data-fieldname="NOMBRE_PARIENTE">
+                    <LABEL class="col-md-3 control-label" for="{$labelfor_NOMBRE_PARIENTE}">
+                      {BEGIN NOMBRE_PARIENTE_label}
+                        {$label propietario NOMBRE_PARIENTE}
+                      {END NOMBRE_PARIENTE_label}
+                    </LABEL>
+                    <DIV class="col-md-6">
+                      {$NOMBRE_PARIENTE_editcontrol}
+                    </DIV>
+                    <DIV class="col-md-3 help-block" data-helpfor="NOMBRE_PARIENTE">
+                      <DIV class="text-muted">
+                        {$tooltip propietario NOMBRE_PARIENTE}
+                      </DIV>
+                    </DIV>
+                  </DIV>
+                </DIV>
+              {END NOMBRE_PARIENTE_fieldblock}
+              {BEGIN PARIENTE_fieldblock}
+                <DIV class="container">
+                  <DIV class="form-group {$fielddispclass_PARIENTE}" data-signal-error-for="PARIENTE{$id}" data-fieldname="PARIENTE">
+                    <LABEL class="col-md-3 control-label" for="{$labelfor_PARIENTE}">
+                      {BEGIN PARIENTE_label}
+                        {$label propietario PARIENTE}
+                      {END PARIENTE_label}
+                    </LABEL>
+                    <DIV class="col-md-6">
+                      {$PARIENTE_editcontrol}
+                    </DIV>
+                    <DIV class="col-md-3 help-block" data-helpfor="PARIENTE">
+                      <DIV class="text-muted">
+                        {$tooltip propietario PARIENTE}
+                      </DIV>
+                    </DIV>
+                  </DIV>
+                </DIV>
+              {END PARIENTE_fieldblock}
+              
+              {BEGIN IDENTIFICACION_fieldblock}
+                <DIV class="container">
+                  <DIV class="form-group {$fielddispclass_IDENTIFICACION}" data-signal-error-for="IDENTIFICACION{$id}" data-fieldname="IDENTIFICACION">
+                    <LABEL class="col-md-3 control-label" for="{$labelfor_IDENTIFICACION}">
+                      {BEGIN IDENTIFICACION_label}
+                        {$label propietario IDENTIFICACION}
+                      {END IDENTIFICACION_label}
+                    </LABEL>
+                    <DIV class="col-md-6">
+                      {$IDENTIFICACION_editcontrol}
+                    </DIV>
+                    <DIV class="col-md-3 help-block" data-helpfor="IDENTIFICACION">
+                      <DIV class="text-muted">
+                        {$tooltip propietario IDENTIFICACION}
+                      </DIV>
+                    </DIV>
+                  </DIV>
+                </DIV>
+              {END IDENTIFICACION_fieldblock}
+              {BEGIN TEL_PARIENTE_fieldblock}
+                <DIV class="container">
+                  <DIV class="form-group {$fielddispclass_TEL_PARIENTE}" data-signal-error-for="TEL_PARIENTE{$id}" data-fieldname="TEL_PARIENTE">
+                    <LABEL class="col-md-3 control-label" for="{$labelfor_TEL_PARIENTE}">
+                      {BEGIN TEL_PARIENTE_label}
+                        {$label propietario TEL_PARIENTE}
+                      {END TEL_PARIENTE_label}
+                    </LABEL>
+                    <DIV class="col-md-6">
+                      {$TEL_PARIENTE_editcontrol}
+                    </DIV>
+                    <DIV class="col-md-3 help-block" data-helpfor="TEL_PARIENTE">
+                      <DIV class="text-muted">
+                        {$tooltip propietario TEL_PARIENTE}
+                      </DIV>
+                    </DIV>
+                  </DIV>
+                </DIV>
+              {END TEL_PARIENTE_fieldblock}
+            </DIV>
+          </DIV>
+        {END container_fields}
+        {BEGIN container_bottombuttons}
+          <DIV class="container" data-container="bottombuttons" data-pageid="{$pageid}" {$bottombuttons_chiddenattr}>
+            {BEGIN container_buttons}
+              <DIV class="form-group" data-container="buttons" data-pageid="{$pageid}" {$buttons_chiddenattr}>
+                {BEGIN container_leftbuttons}
+                  <DIV class="col-md-3 col-md-offset-3" data-container="leftbuttons" data-pageid="{$pageid}" {$leftbuttons_chiddenattr}>
+                    {BEGIN editbuttons}
+                      {BEGIN save_button}
+                        <BUTTON class="btn btn-primary" {$savebutton_attrs}>
+                          Guardar
+                        </BUTTON>
+                      {END save_button}
+                      {BEGIN back_button}
+                        <BUTTON class="btn btn-default" {$backbutton_attrs}>
+                          Volver a la lista
+                        </BUTTON>
+                      {END back_button}
+                      {BEGIN close_button}
+                        <A class="btn btn-default" href="#" {$closebutton_attrs}>
+                          Cancelar
+                        </A>
+                      {END close_button}
+                    {END editbuttons}
+                  </DIV>
+                {END container_leftbuttons}
+                {BEGIN container_leftbuttons_1}
+                  <DIV class="text-right col-md-3" data-container="leftbuttons_1" data-pageid="{$pageid}" {$leftbuttons_1_chiddenattr}>
+                    {BEGIN righteditbuttons}
+                      <DIV class="btn-group" role="group">
+                        {BEGIN prev_button}
+                          <BUTTON class="btn btn-default {$prevbutton_class}" {$prevbutton_attrs}>
+                            <SPAN class="glyphicon glyphicon-chevron-left">
+                            </SPAN>
+                          </BUTTON>
+                        {END prev_button}
+                        {BEGIN next_button}
+                          <BUTTON class="btn btn-default {$nextbutton_class}" {$nextbutton_attrs}>
+                            <SPAN class="glyphicon glyphicon-chevron-right">
+                            </SPAN>
+                          </BUTTON>
+                        {END next_button}
+                        <DIV class="btn-group dropup" role="group">
+                          <BUTTON class="btn btn-default dropdown-toggle" aria-expanded="false" aria-haspopup="true" data-toggle="dropdown">
+                            <SPAN class="glyphicon glyphicon-menu-hamburger">
+                            </SPAN>
+                          </BUTTON>
+                          <UL class="dropdown-menu dropdown-left">
+                            {BEGIN reset_button}
+                              <LI>
+                                <A href="#" {$resetbutton_attrs}>
+                                  Reiniciar
+                                </A>
+                              </LI>
+                            {END reset_button}
+                            {BEGIN view_page_button}
+                              <LI>
+                                <A href="#" {$view_page_button_attrs}>
+                                  Ver
+                                </A>
+                              </LI>
+                            {END view_page_button}
+                          </UL>
+                        </DIV>
+                      </DIV>
+                    {END righteditbuttons}
+                  </DIV>
+                {END container_leftbuttons_1}
+              </DIV>
+            {END container_buttons}
+          </DIV>
+        {END container_bottombuttons}
+      </DIV>
+      <DIV class="bs-middle">
+        <DIV class="bs-topmiddle">
+        </DIV>
+        <DIV class="bs-left" {$blockattr_left}>
+        </DIV>
+        <DIV class="bs-center">
+        </DIV>
+        <DIV class="bs-right">
+        </DIV>
+      </DIV>
+      <DIV class="bs-bottom">
+      </DIV>
+      {$footer}
+    {END body}
+  </BODY>
+</HTML>

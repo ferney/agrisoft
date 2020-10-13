@@ -1,0 +1,55 @@
+<div {$pageattrs}>
+
+{BEGIN container_column}
+<div class="rnr-c rnr-ch rnr-c-column">
+
+{BEGIN masterlist_title}
+<div  class="style1 rnr-bl rnr-b-masterprintheader {$brickclass_masterprintheader}"><span>{$pagetitlelabel propietario masterprint}</span></div>
+{END masterlist_title}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_column}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+<table {$bsmasterprintgrid_hiddenattr} data-pageid="{$pageid}" data-brick="bsmasterprintgrid" class="table rnr-b-mastergridfields rnr-gridtable" >
+		<thead>
+		<tr>
+			<th class="{$CEDULA_class}">{$label propietario CEDULA}</th>
+			<th class="{$NOMBRE_class}">{$label propietario NOMBRE}</th>
+			<th class="{$TELEFONO_class}">{$label propietario TELEFONO}</th>
+			<th class="{$F_NACIMIENTO_class}">{$label propietario F_NACIMIENTO}</th>
+			<th class="{$E_CIVIL_class}">{$label propietario E_CIVIL}</th>
+			<th class="{$PARIENTE_class}">{$label propietario PARIENTE}</th>
+			<th class="{$NOMBRE_PARIENTE_class}">{$label propietario NOMBRE_PARIENTE}</th>
+			<th class="{$IDENTIFICACION_class}">{$label propietario IDENTIFICACION}</th>
+			<th class="{$TEL_PARIENTE_class}">{$label propietario TEL_PARIENTE}</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="{$CEDULA_class}">{$CEDULA_mastervalue}</td>
+			<td class="{$NOMBRE_class}">{$NOMBRE_mastervalue}</td>
+			<td class="{$TELEFONO_class}">{$TELEFONO_mastervalue}</td>
+			<td class="{$F_NACIMIENTO_class}">{$F_NACIMIENTO_mastervalue}</td>
+			<td class="{$E_CIVIL_class}">{$E_CIVIL_mastervalue}</td>
+			<td class="{$PARIENTE_class}">{$PARIENTE_mastervalue}</td>
+			<td class="{$NOMBRE_PARIENTE_class}">{$NOMBRE_PARIENTE_mastervalue}</td>
+			<td class="{$IDENTIFICACION_class}">{$IDENTIFICACION_mastervalue}</td>
+			<td class="{$TEL_PARIENTE_class}">{$TEL_PARIENTE_mastervalue}</td>
+		</tr>
+	</tbody>
+
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>

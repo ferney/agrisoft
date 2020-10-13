@@ -1,0 +1,268 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_viewpage}
+<div {$viewpage_chiddenattr} data-pageid="{$pageid}" data-container="viewpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-12 "> 
+
+{BEGIN viewheader}
+	<h2 {$viewheader_hiddenattr} data-pageid="{$pageid}" data-brick="viewheader" >{$pagetitlelabel propietario view}</h2>
+
+{END viewheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_viewpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class=" form-horizontal  col-md-12 "> 
+
+
+<div {$viewfields_hiddenattr} data-pageid="{$pageid}" data-brick="viewfields" >
+
+	<div class="container">
+					{BEGIN CEDULA_fieldblock}
+	<div class="{$fielddispclass_CEDULA} col-md-6 bs-viewcontrolgroup" data-fieldname="CEDULA">
+		<label class="control-label" for="{$labelfor_CEDULA}">
+			{$label propietario CEDULA}
+		</label>
+		<div class="" >
+			{$CEDULA_value}&nbsp;
+		</div>
+	</div>
+{END CEDULA_fieldblock}
+					{BEGIN NOMBRE_fieldblock}
+	<div class="{$fielddispclass_NOMBRE} col-md-6 bs-viewcontrolgroup" data-fieldname="NOMBRE">
+		<label class="control-label" for="{$labelfor_NOMBRE}">
+			{$label propietario NOMBRE}
+		</label>
+		<div class="" >
+			{$NOMBRE_value}&nbsp;
+		</div>
+	</div>
+{END NOMBRE_fieldblock}
+					{BEGIN TELEFONO_fieldblock}
+	<div class="{$fielddispclass_TELEFONO} col-md-6 bs-viewcontrolgroup" data-fieldname="TELEFONO">
+		<label class="control-label" for="{$labelfor_TELEFONO}">
+			{$label propietario TELEFONO}
+		</label>
+		<div class="" >
+			{$TELEFONO_value}&nbsp;
+		</div>
+	</div>
+{END TELEFONO_fieldblock}
+					{BEGIN F_NACIMIENTO_fieldblock}
+	<div class="{$fielddispclass_F_NACIMIENTO} col-md-6 bs-viewcontrolgroup" data-fieldname="F_NACIMIENTO">
+		<label class="control-label" for="{$labelfor_F_NACIMIENTO}">
+			{$label propietario F_NACIMIENTO}
+		</label>
+		<div class="" >
+			{$F_NACIMIENTO_value}&nbsp;
+		</div>
+	</div>
+{END F_NACIMIENTO_fieldblock}
+					{BEGIN E_CIVIL_fieldblock}
+	<div class="{$fielddispclass_E_CIVIL} col-md-6 bs-viewcontrolgroup" data-fieldname="E_CIVIL">
+		<label class="control-label" for="{$labelfor_E_CIVIL}">
+			{$label propietario E_CIVIL}
+		</label>
+		<div class="" >
+			{$E_CIVIL_value}&nbsp;
+		</div>
+	</div>
+{END E_CIVIL_fieldblock}
+					{BEGIN PARIENTE_fieldblock}
+	<div class="{$fielddispclass_PARIENTE} col-md-6 bs-viewcontrolgroup" data-fieldname="PARIENTE">
+		<label class="control-label" for="{$labelfor_PARIENTE}">
+			{$label propietario PARIENTE}
+		</label>
+		<div class="" >
+			{$PARIENTE_value}&nbsp;
+		</div>
+	</div>
+{END PARIENTE_fieldblock}
+					{BEGIN NOMBRE_PARIENTE_fieldblock}
+	<div class="{$fielddispclass_NOMBRE_PARIENTE} col-md-6 bs-viewcontrolgroup" data-fieldname="NOMBRE_PARIENTE">
+		<label class="control-label" for="{$labelfor_NOMBRE_PARIENTE}">
+			{$label propietario NOMBRE_PARIENTE}
+		</label>
+		<div class="" >
+			{$NOMBRE_PARIENTE_value}&nbsp;
+		</div>
+	</div>
+{END NOMBRE_PARIENTE_fieldblock}
+					{BEGIN IDENTIFICACION_fieldblock}
+	<div class="{$fielddispclass_IDENTIFICACION} col-md-6 bs-viewcontrolgroup" data-fieldname="IDENTIFICACION">
+		<label class="control-label" for="{$labelfor_IDENTIFICACION}">
+			{$label propietario IDENTIFICACION}
+		</label>
+		<div class="" >
+			{$IDENTIFICACION_value}&nbsp;
+		</div>
+	</div>
+{END IDENTIFICACION_fieldblock}
+					{BEGIN TEL_PARIENTE_fieldblock}
+	<div class="{$fielddispclass_TEL_PARIENTE} col-md-6 bs-viewcontrolgroup" data-fieldname="TEL_PARIENTE">
+		<label class="control-label" for="{$labelfor_TEL_PARIENTE}">
+			{$label propietario TEL_PARIENTE}
+		</label>
+		<div class="" >
+			{$TEL_PARIENTE_value}&nbsp;
+		</div>
+	</div>
+{END TEL_PARIENTE_fieldblock}
+	</div>
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_buttons}
+<div {$buttons_chiddenattr} data-pageid="{$pageid}" data-container="buttons" class=" form-group   "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-6 "> 
+
+{BEGIN viewbuttons}
+{BEGIN back_button}
+<button class="btn btn-primary" {$backbutton_attrs}>Volver a la lista</button>
+{END back_button}
+{BEGIN close_button}
+<button href="#" class="btn btn-primary" {$closebutton_attrs}>Cerrar ventana</button>
+{END close_button}
+{END viewbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+
+
+{BEGIN container_leftbuttons_1}
+<div {$leftbuttons_1_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons_1" class="   col-md-4 "> 
+
+{BEGIN rightviewbuttons}
+<div class="btn-group" role="group">
+		{BEGIN prev_button}
+	<button class="btn btn-default {$prevbutton_class}" {$prevbutton_attrs}><span class="glyphicon glyphicon-chevron-left"></span></button>
+	{END prev_button}
+	{BEGIN next_button}
+	<button class="btn btn-default {$nextbutton_class}" {$nextbutton_attrs}><span class="glyphicon glyphicon-chevron-right"></span></button>
+	{END next_button}
+		<div class="btn-group dropup" role="group">
+		<button class="btn btn-default dropdown-toggle {$groupbutton_class}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+		<ul class="dropdown-menu dropdown-left">
+						{BEGIN pdflink_block}
+			<li><a href=# class="pdflink" {$pdflink_attrs}>Vista PDF</a></li>
+			{END pdflink_block}
+						{BEGIN edit_page_button}
+				<li><a href=# {$edit_page_button_attrs}>Editar</a></li>
+			{END edit_page_button}
+		</ul>
+	</div>
+</div>
+{END rightviewbuttons}
+
+
+
+</div>
+{END container_leftbuttons_1}
+
+
+
+
+
+
+</div>
+{END container_buttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

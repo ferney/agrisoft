@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}>
+  <HEAD>
+    <META http-equiv="X-UA-Compatible" content="IE=Edge">
+    <META name="viewport" content="width=device-width, initial-scale=1.0">
+    <TITLE>
+      {$pagetitle}
+    </TITLE>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <LINK href="styles/default.css" rel="stylesheet" type="text/css">
+    {BEGIN rtlCSS}
+      <LINK href="styles/defaultRTL.css" rel="stylesheet" type="text/css">
+    {END rtlCSS}
+    {BEGIN styleCSSFiles}
+      <LINK href="{$stylepath}" rel="stylesheet" type="text/css">
+    {END styleCSSFiles}
+    <META name="GENERATOR" content="MSHTML 11.00.10570.1001">
+  </HEAD>
+  <BODY class="{$stylename} function-chart" {$bodyattrs}>
+    {BEGIN body}
+      {$header}
+      <STYLE>
+        {$containerCss}
+      </STYLE>
+      {BEGIN container_menu}
+        <NAV class="navbar navbar-default" data-container="menu" data-pageid="{$pageid}" {$menu_chiddenattr}>
+          {BEGIN container_hdr}
+            <DIV class="navbar-header" data-container="hdr" data-pageid="{$pageid}" {$hdr_chiddenattr}>
+              {BEGIN logo_block}
+                <A class="navbar-brand" href="{$home_link}" data-brick="logo" data-pageid="{$pageid}" {$logo_hiddenattr}>
+                  {$logo}
+                </A>
+              {END logo_block}
+              {BEGIN collapse_block}
+                <BUTTON class="navbar-toggle collapsed" type="button" data-brick="bsnavbarcollapse" data-pageid="{$pageid}" data-target=".bs-navcontrolled" data-runner-toggle="collapse" {$bsnavbarcollapse_hiddenattr}>
+                  <SPAN class="sr-only">
+                    Toggle navigation
+                  </SPAN>
+                  <SPAN class="icon-bar">
+                  </SPAN>
+                </BUTTON>
+              {END collapse_block}
+            </DIV>
+          {END container_hdr}
+          {BEGIN container_menu_1}
+            <DIV class="bs-navform navbar-collapse bs-navcontrolled bs-hidden-xs" aria-expanded="false" data-container="menu_1" data-pageid="{$pageid}" {$menu_1_chiddenattr}>
+              
+              {BEGIN container_more}
+                <DIV class="navbar-right navbar-form" data-container="more" data-pageid="{$pageid}" {$more_chiddenattr}>
+                  {BEGIN more_list}
+                    <DIV class="btn-group bs-navsection" data-brick="morebutton" data-pageid="{$pageid}" {$morebutton_hiddenattr}>
+                      <BUTTON class="btn btn-default dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button" data-toggle="dropdown">
+                        <SPAN class="glyphicon glyphicon-cog">
+                        </SPAN>
+                        <SPAN class="caret">
+                        </SPAN>
+                      </BUTTON>
+                      <UL class="dropdown-menu">
+                        {BEGIN asearch_link}
+                          <LI>
+                            <A href="GRAFICO_PECUARIO_search.php" {$advsearchlink_attrs}>
+                              Búsqueda avanzada
+                            </A>
+                          </LI>
+                        {END asearch_link}
+                        {BEGIN searchPanelTopButtons}
+                          <LI>
+                            <A id="showOptPanel{$id}" href="#">
+                              Show search panel
+                            </A>
+                          </LI>
+                        {END searchPanelTopButtons}
+                      </UL>
+                    </DIV>
+                  {END more_list}
+                  {BEGIN security_block}
+                    <SPAN class="bs-navsection" id="login_block{$id}" data-brick="loggedas" data-pageid="{$pageid}" {$loggedas_hiddenattr}>
+                      {BEGIN guestloginbutton}
+                        <BUTTON class="btn btn-info" type="button" {$guestloginlink_attrs}>
+                          Conectar
+                        </BUTTON>
+                      {END guestloginbutton}
+                      {BEGIN loggedas_message}
+                        <SPAN class="dropdown">
+                          <BUTTON class="btn btn-info dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button" data-toggle="dropdown">
+                            <SPAN class="glyphicon glyphicon-user">
+                            </SPAN>
+                            {$username}
+                          </BUTTON>
+                          <UL class="dropdown-menu">
+                            {BEGIN logoutbutton}
+                              <LI>
+                                <A href="#" {$logoutlink_attrs}>
+                                  Desconectarse
+                                </A>
+                              </LI>
+                            {END logoutbutton}
+                          </UL>
+                        </SPAN>
+                      {END loggedas_message}
+                    </SPAN>
+                  {END security_block}
+                </DIV>
+              {END container_more}
+              {BEGIN container_more_1}
+                <DIV class="navbar-right navbar-form" data-container="more_1" data-pageid="{$pageid}" {$more_1_chiddenattr}>
+                  {BEGIN searchform_block}
+                    <SPAN class="form-group" data-brick="search" data-pageid="{$pageid}" {$search_hiddenattr}>
+                      <DIV class="input-group">
+                        {BEGIN searchform_text}
+                          <INPUT class="form-control" type="search" size="25" {$searchfor_attrs}>
+                        {END searchform_text}
+                        <SPAN class="input-group-btn">
+                          {BEGIN searchform_showall}
+                            <BUTTON title="Mostrar todo" class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>
+                              <SPAN class="glyphicon glyphicon-remove">
+                              </SPAN>
+                            </BUTTON>
+                          {END searchform_showall}
+                          {BEGIN searchform_search}
+                            <BUTTON class="btn btn-primary" {$searchbutton_attrs}>
+                              <SPAN class="glyphicon glyphicon-search">
+                              </SPAN>
+                            </BUTTON>
+                          {END searchform_search}
+                        </SPAN>
+                      </DIV>
+                    </SPAN>
+                  {END searchform_block}
+                </DIV>
+              {END container_more_1}
+            </DIV>
+          {END container_menu_1}
+        </NAV>
+      {END container_menu}
+      <DIV class="bs-middle">
+        <DIV class="bs-topmiddle">
+          {BEGIN container_breadcrumbs}
+            <DIV class=" " data-container="breadcrumbs" data-pageid="{$pageid}" {$breadcrumbs_chiddenattr}>
+              {BEGIN container_bc}
+                <DIV class=" " data-container="bc" data-pageid="{$pageid}" {$bc_chiddenattr}>
+                  {BEGIN breadcrumbs}
+                    <OL class="breadcrumb">
+                      <LI>
+                        <A href="{$home_link}">
+                          <SPAN class="glyphicon glyphicon-home">
+                          </SPAN>
+                        </A>
+                        {$crumb_dropdown}
+                      </LI>
+                      {BEGIN crumb}
+                        <LI class="{$crumb_item_class}">
+                          {BEGIN crumb_title_link}
+                            <A {$crumb_attrs}>
+                              {$crumb_title}
+                            </A>
+                          {END crumb_title_link}
+                          {BEGIN crumb_title_span}
+                            <SPAN>
+                              {$crumb_title}
+                            </SPAN>
+                          {END crumb_title_span}
+                          {$crumb_dropdown}
+                        </LI>
+                      {END crumb}
+                    </OL>
+                  {END breadcrumbs}
+                </DIV>
+              {END container_bc}
+            </DIV>
+          {END container_breadcrumbs}
+          {BEGIN container_masterinfo}
+            <DIV class=" " data-container="masterinfo" data-pageid="{$pageid}" {$masterinfo_chiddenattr}>
+              {BEGIN mastertable_block}
+                <DIV class="panel panel-info table-panel">
+                  <DIV class="panel-heading">
+                    {$master_heading}
+                  </DIV>
+                  <DIV class="panel-body">
+                    {$showmasterfile}
+                  </DIV>
+                </DIV>
+              {END mastertable_block}
+            </DIV>
+          {END container_masterinfo}
+        </DIV>
+        <DIV class="bs-left" {$blockattr_left}>
+          {BEGIN container_left}
+            <DIV class=" " data-container="left" data-pageid="{$pageid}" {$left_chiddenattr}>
+              {BEGIN searchPanel}
+                <DIV class="searchOptions panel panel-primary searchPanelContainer" data-brick="searchpanel" data-pageid="{$pageid}" {$searchpanel_hiddenattr} {$srchOpt_attrs}>
+                  <!-- Search panel content -->
+                  <DIV class="panel-heading">
+                    <DIV class="btn-group" id="addSearchFieldButton{$id}">
+                      <BUTTON class="btn btn-default dropdown-toggle" id="showHideControlChooseMenu{$id}" aria-expanded="false" aria-haspopup="true" type="button" data-toggle="dropdown">
+                        Search in
+                        <SPAN class="caret">
+                        </SPAN>
+                      </BUTTON>
+                    </DIV>
+                    <DIV class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+                      <BUTTON class="btn btn-default dropdown-toggle" aria-expanded="false" aria-haspopup="true" type="button" data-toggle="dropdown">
+                        <SPAN class="glyphicon glyphicon glyphicon-option-vertical">
+                        </SPAN>
+                      </BUTTON>
+                      <UL class="dropdown-menu dropdown-left">
+                        <LI id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}>
+                          <A>
+                            Mostrar opciones
+                          </A>
+                        </LI>
+                        <LI class="divider" role="separator">
+                        </LI>
+                        <LI class="srchCritTop" style="display: none;">
+                          <A>
+                            <INPUT name="srchType{$id}" id="radioAll" type="radio" {$all_checkbox}>
+                            <LABEL for="radioAll">
+                              <SPAN class="glyphicon">
+                                &nbsp;
+                              </SPAN>
+                              all conditions
+                            </LABEL>
+                          </A>
+                        </LI>
+                        <LI class="srchCritTop" style="display: none;">
+                          <A>
+                            <INPUT name="srchType{$id}" id="radioAny" type="radio" {$any_checkbox}>
+                            <LABEL for="radioAny">
+                              <SPAN class="glyphicon">
+                                &nbsp;
+                              </SPAN>
+                              any condition
+                            </LABEL>
+                          </A>
+                        </LI>
+                        <LI class="divider" role="separator">
+                        </LI>
+                        <LI>
+                          <A class="close-button">
+                            <SPAN class="glyphicon glyphicon-remove">
+                              &nbsp;
+                            </SPAN>
+                            esconder
+                          </A>
+                        </LI>
+                      </UL>
+                    </DIV>
+                  </DIV>
+                  <DIV class="panel-body controlsBlock" {$bottomSearchButt_attrs}>
+                    {BEGIN searchCtrlBlock}
+                      <DIV class="srchPanelRow form-group" {$filterRow_attrs}>
+                        <LABEL>
+                          {$fLabel}
+                        </LABEL>
+                        {$delCtrlButt}
+                        <SPAN class="rnr-searchtype">
+                          {$searchtype}
+                        </SPAN>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol}
+                        </SPAN>
+                        <SPAN class="rnr-searchcontrol">
+                          {$searchcontrol1}
+                        </SPAN>
+                      </DIV>
+                    {END searchCtrlBlock}
+                  </DIV>
+                  <DIV class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+                    <BUTTON class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>
+                      Buscar
+                    </BUTTON>
+                    <BUTTON class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>
+                      Mostrar todo
+                    </BUTTON>
+                  </DIV>
+                </DIV>
+              {END searchPanel}
+              {BEGIN filterPanel}
+                <DIV data-brick="filterpanel" data-pageid="{$pageid}" {$filterpanel_hiddenattr}>
+                  <BUTTON class="bs-hidden-xs bs-navcontrolled btn btn-info bs-togglebutton bottom-margin collapsed" type="button" data-target=".filterPanelContainer" data-runner-toggle="collapse">
+                    <SPAN class="glyphicon glyphicon-filter">
+                      <SPAN>
+                        Filter
+                      </SPAN>
+                    </SPAN>
+                  </BUTTON>
+                  <DIV class="bs-hidden-xs filterPanelContainer {$filterPanelStateClass}">
+                    {BEGIN filter_control_VEREDA}
+                      <DIV class="panel panel-info filter-field filter-VEREDA-container">
+                        <DIV class="panel-heading filter-expander">
+                          <SPAN class="filter-indicator glyphicon glyphicon-triangle-top">
+                          </SPAN>
+                          {$label GRAFICO_PECUARIO VEREDA}
+                          {BEGIN clearLink_VEREDA}
+                            <A class="filter-clear filter-clear-VEREDA" href="#">
+                              borrar
+                            </A>
+                          {END clearLink_VEREDA}
+                        </DIV>
+                        <UL class="list-group">
+                          {BEGIN filterCtrlBlock_VEREDA}
+                            <LI class="list-group-item filter-values filter-values-VEREDA {$collapsedClass_VEREDA} {$visibilityClass_VEREDA}">
+                              {$VEREDA_filter}
+                            </LI>
+                          {END filterCtrlBlock_VEREDA}
+                          {BEGIN filter_button_showmore_VEREDA}
+                            <LI class="list-group-item filter-show-more {$collapsedClass_VEREDA} {$showMoreBtnClass_VEREDA}">
+                              <A class="filter-show-more-link filterShowMore_VEREDA" href="#">
+                                Show{$numberOfItemsToSHow_VEREDA}more
+                              </A>
+                            </LI>
+                          {END filter_button_showmore_VEREDA}
+                        </UL>
+                      </DIV>
+                    {END filter_control_VEREDA}
+                    {BEGIN filter_control_RAZA}
+                      <DIV class="panel panel-info filter-field filter-RAZA-container">
+                        <DIV class="panel-heading filter-expander">
+                          <SPAN class="filter-indicator glyphicon glyphicon-triangle-top">
+                          </SPAN>
+                          {$label GRAFICO_PECUARIO RAZA}
+                          {BEGIN clearLink_RAZA}
+                            <A class="filter-clear filter-clear-RAZA" href="#">
+                              borrar
+                            </A>
+                          {END clearLink_RAZA}
+                        </DIV>
+                        <UL class="list-group">
+                          {BEGIN filterCtrlBlock_RAZA}
+                            <LI class="list-group-item filter-values filter-values-RAZA {$collapsedClass_RAZA} {$visibilityClass_RAZA}">
+                              {$RAZA_filter}
+                            </LI>
+                          {END filterCtrlBlock_RAZA}
+                          {BEGIN filter_button_showmore_RAZA}
+                            <LI class="list-group-item filter-show-more {$collapsedClass_RAZA} {$showMoreBtnClass_RAZA}">
+                              <A class="filter-show-more-link filterShowMore_RAZA" href="#">
+                                Show{$numberOfItemsToSHow_RAZA}more
+                              </A>
+                            </LI>
+                          {END filter_button_showmore_RAZA}
+                        </UL>
+                      </DIV>
+                    {END filter_control_RAZA}
+                    {BEGIN filter_control_ANIMALES}
+                      <DIV class="panel panel-info filter-field filter-ANIMALES-container">
+                        <DIV class="panel-heading filter-expander">
+                          <SPAN class="filter-indicator glyphicon glyphicon-triangle-top">
+                          </SPAN>
+                          {$label GRAFICO_PECUARIO ANIMALES}
+                          {BEGIN clearLink_ANIMALES}
+                            <A class="filter-clear filter-clear-ANIMALES" href="#">
+                              borrar
+                            </A>
+                          {END clearLink_ANIMALES}
+                        </DIV>
+                        <UL class="list-group">
+                          {BEGIN filterCtrlBlock_ANIMALES}
+                            <LI class="list-group-item filter-values filter-values-ANIMALES {$collapsedClass_ANIMALES} {$visibilityClass_ANIMALES}">
+                              {$ANIMALES_filter}
+                            </LI>
+                          {END filterCtrlBlock_ANIMALES}
+                          {BEGIN filter_button_showmore_ANIMALES}
+                            <LI class="list-group-item filter-show-more {$collapsedClass_ANIMALES} {$showMoreBtnClass_ANIMALES}">
+                              <A class="filter-show-more-link filterShowMore_ANIMALES" href="#">
+                                Show{$numberOfItemsToSHow_ANIMALES}more
+                              </A>
+                            </LI>
+                          {END filter_button_showmore_ANIMALES}
+                        </UL>
+                      </DIV>
+                    {END filter_control_ANIMALES}
+                    {BEGIN filter_control_AREA}
+                      <DIV class="panel panel-info filter-field filter-AREA-container">
+                        <DIV class="panel-heading filter-expander">
+                          <SPAN class="filter-indicator glyphicon glyphicon-triangle-top">
+                          </SPAN>
+                          {$label GRAFICO_PECUARIO AREA}
+                          {BEGIN clearLink_AREA}
+                            <A class="filter-clear filter-clear-AREA" href="#">
+                              borrar
+                            </A>
+                          {END clearLink_AREA}
+                        </DIV>
+                        <UL class="list-group">
+                          {BEGIN filterCtrlBlock_AREA}
+                            <LI class="list-group-item filter-values filter-values-AREA {$collapsedClass_AREA} {$visibilityClass_AREA}">
+                              {$AREA_filter}
+                            </LI>
+                          {END filterCtrlBlock_AREA}
+                          {BEGIN filter_button_showmore_AREA}
+                            <LI class="list-group-item filter-show-more {$collapsedClass_AREA} {$showMoreBtnClass_AREA}">
+                              <A class="filter-show-more-link filterShowMore_AREA" href="#">
+                                Show{$numberOfItemsToSHow_AREA}more
+                              </A>
+                            </LI>
+                          {END filter_button_showmore_AREA}
+                        </UL>
+                      </DIV>
+                    {END filter_control_AREA}
+                    {BEGIN filter_control_PRODUCCION}
+                      <DIV class="panel panel-info filter-field filter-PRODUCCION-container">
+                        <DIV class="panel-heading filter-expander">
+                          <SPAN class="filter-indicator glyphicon glyphicon-triangle-top">
+                          </SPAN>
+                          {$label GRAFICO_PECUARIO PRODUCCION}
+                          {BEGIN clearLink_PRODUCCION}
+                            <A class="filter-clear filter-clear-PRODUCCION" href="#">
+                              borrar
+                            </A>
+                          {END clearLink_PRODUCCION}
+                        </DIV>
+                        <UL class="list-group">
+                          {BEGIN filterCtrlBlock_PRODUCCION}
+                            <LI class="list-group-item filter-values filter-values-PRODUCCION {$collapsedClass_PRODUCCION} {$visibilityClass_PRODUCCION}">
+                              {$PRODUCCION_filter}
+                            </LI>
+                          {END filterCtrlBlock_PRODUCCION}
+                          {BEGIN filter_button_showmore_PRODUCCION}
+                            <LI class="list-group-item filter-show-more {$collapsedClass_PRODUCCION} {$showMoreBtnClass_PRODUCCION}">
+                              <A class="filter-show-more-link filterShowMore_PRODUCCION" href="#">
+                                Show{$numberOfItemsToSHow_PRODUCCION}more
+                              </A>
+                            </LI>
+                          {END filter_button_showmore_PRODUCCION}
+                        </UL>
+                      </DIV>
+                    {END filter_control_PRODUCCION}
+                    {BEGIN filter_control_A_O}
+                      <DIV class="panel panel-info filter-field filter-A_O-container">
+                        <DIV class="panel-heading filter-expander">
+                          <SPAN class="filter-indicator glyphicon glyphicon-triangle-top">
+                          </SPAN>
+                          {$label GRAFICO_PECUARIO A_O}
+                          {BEGIN clearLink_A_O}
+                            <A class="filter-clear filter-clear-A_O" href="#">
+                              borrar
+                            </A>
+                          {END clearLink_A_O}
+                        </DIV>
+                        <UL class="list-group">
+                          {BEGIN filterCtrlBlock_A_O}
+                            <LI class="list-group-item filter-values filter-values-A_O {$collapsedClass_A_O} {$visibilityClass_A_O}">
+                              {$A_O_filter}
+                            </LI>
+                          {END filterCtrlBlock_A_O}
+                          {BEGIN filter_button_showmore_A_O}
+                            <LI class="list-group-item filter-show-more {$collapsedClass_A_O} {$showMoreBtnClass_A_O}">
+                              <A class="filter-show-more-link filterShowMore_A_O" href="#">
+                                Show{$numberOfItemsToSHow_A_O}more
+                              </A>
+                            </LI>
+                          {END filter_button_showmore_A_O}
+                        </UL>
+                      </DIV>
+                    {END filter_control_A_O}
+                  </DIV>
+                </DIV>
+              {END filterPanel}
+            </DIV>
+          {END container_left}
+        </DIV>
+        <DIV class="bs-center bs-screenwidth bs-minwidth">
+          {BEGIN container_message}
+            <DIV class=" " data-container="message" data-pageid="{$pageid}" {$message_chiddenattr}>
+              {BEGIN message_block}
+                <DIV class="alert {$message_class}" role="alert" data-brick="message" data-pageid="{$pageid}" {$message_hiddenattr}>
+                  {$message}
+                </DIV>
+              {END message_block}
+            </DIV>
+          {END container_message}
+          {BEGIN container_form}
+            <DIV class="bs-grid" data-container="form" data-pageid="{$pageid}" {$form_chiddenattr}>
+              {BEGIN chart_block}
+                <DIV id="chart_block{$id}">
+                  {$GRAFICO_PECUARIO_chart 700 530}
+                </DIV>
+              {END chart_block}
+            </DIV>
+          {END container_form}
+        </DIV>
+        <DIV class="bs-right">
+        </DIV>
+      </DIV>
+      {$footer}
+    {END body}
+  </BODY>
+</HTML>

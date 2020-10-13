@@ -1,0 +1,59 @@
+<div {$pageattrs}>
+
+{BEGIN container_column}
+<div class="rnr-c rnr-ch rnr-c-column">
+
+{BEGIN masterlist_title}
+<div  class="style1 rnr-bl rnr-b-masterprintheader {$brickclass_masterprintheader}"><span>{$pagetitlelabel finca masterprint}</span></div>
+{END masterlist_title}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_column}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+<table {$bsmasterprintgrid_hiddenattr} data-pageid="{$pageid}" data-brick="bsmasterprintgrid" class="table rnr-b-mastergridfields rnr-gridtable" >
+		<thead>
+		<tr>
+			<th class="{$ID_class}">{$label finca ID}</th>
+			<th class="{$PROPIETARIO_CEDULA_class}">{$label finca PROPIETARIO_CEDULA}</th>
+			<th class="{$NOMBRE_class}">{$label finca NOMBRE}</th>
+			<th class="{$VEREDA_class}">{$label finca VEREDA}</th>
+			<th class="{$FINCA_class}">{$label finca FINCA}</th>
+			<th class="{$ALTURA_class}">{$label finca ALTURA}</th>
+			<th class="{$GEOREFERENCIA_class}">{$label finca GEOREFERENCIA}</th>
+			<th class="{$AREA_FINCA_class}">{$label finca AREA_FINCA}</th>
+			<th class="{$LINEA_PRINCIPAL_class}">{$label finca LINEA_PRINCIPAL}</th>
+			<th class="{$AREA__L_P_class}">{$label finca AREA__L_P}</th>
+			<th class="{$A_O_class}">{$label finca A_O}</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="{$ID_class}">{$ID_mastervalue}</td>
+			<td class="{$PROPIETARIO_CEDULA_class}">{$PROPIETARIO_CEDULA_mastervalue}</td>
+			<td class="{$NOMBRE_class}">{$NOMBRE_mastervalue}</td>
+			<td class="{$VEREDA_class}">{$VEREDA_mastervalue}</td>
+			<td class="{$FINCA_class}">{$FINCA_mastervalue}</td>
+			<td class="{$ALTURA_class}">{$ALTURA_mastervalue}</td>
+			<td class="{$GEOREFERENCIA_class}">{$GEOREFERENCIA_mastervalue}</td>
+			<td class="{$AREA_FINCA_class}">{$AREA_FINCA_mastervalue}</td>
+			<td class="{$LINEA_PRINCIPAL_class}">{$LINEA_PRINCIPAL_mastervalue}</td>
+			<td class="{$AREA__L_P_class}">{$AREA__L_P_mastervalue}</td>
+			<td class="{$A_O_class}">{$A_O_mastervalue}</td>
+		</tr>
+	</tbody>
+
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>

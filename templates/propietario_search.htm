@@ -1,0 +1,296 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		<DIV class="bs-top">
+        
+
+{BEGIN container_searchpage}
+<div {$searchpage_chiddenattr} data-pageid="{$pageid}" data-container="searchpage" class="container    "> 
+
+
+
+
+{BEGIN container_header}
+<div {$header_chiddenattr} data-pageid="{$pageid}" data-container="header" class="   col-md-6 col-md-offset-3"> 
+
+{BEGIN searchheader}
+	<h2 {$bssearchheader_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchheader" >{$pagetitlelabel propietario search}</h2>
+
+{END searchheader}
+
+
+
+</div>
+{END container_header}
+
+
+
+
+
+
+</div>
+{END container_searchpage}
+
+
+
+{BEGIN container_fields}
+<div {$fields_chiddenattr} data-pageid="{$pageid}" data-container="fields" class="   col-md-12 "> 
+
+
+<div {$bssearchfields_hiddenattr} data-pageid="{$pageid}" data-brick="bssearchfields" class="form-horizontal" role="form">
+<div class="container">
+	<div class="form-group">
+		<div class="col-md-12" >
+			&nbsp;
+		</div>
+	</div>
+</div>
+	{BEGIN CEDULA_fieldblock}		
+	<div class="container {$fielddispclass_CEDULA}" data-fieldname="CEDULA">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label propietario CEDULA}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_CEDULA}
+			</div>
+			<div class="col-md-4" >
+				{$CEDULA_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$CEDULA_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END CEDULA_fieldblock}
+	{BEGIN NOMBRE_fieldblock}		
+	<div class="container {$fielddispclass_NOMBRE}" data-fieldname="NOMBRE">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label propietario NOMBRE}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_NOMBRE}
+			</div>
+			<div class="col-md-4" >
+				{$NOMBRE_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$NOMBRE_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END NOMBRE_fieldblock}
+	{BEGIN TELEFONO_fieldblock}		
+	<div class="container {$fielddispclass_TELEFONO}" data-fieldname="TELEFONO">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label propietario TELEFONO}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_TELEFONO}
+			</div>
+			<div class="col-md-4" >
+				{$TELEFONO_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TELEFONO_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TELEFONO_fieldblock}
+	{BEGIN F_NACIMIENTO_fieldblock}		
+	<div class="container {$fielddispclass_F_NACIMIENTO}" data-fieldname="F_NACIMIENTO">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label propietario F_NACIMIENTO}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_F_NACIMIENTO}
+			</div>
+			<div class="col-md-4" >
+				{$F_NACIMIENTO_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$F_NACIMIENTO_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END F_NACIMIENTO_fieldblock}
+	{BEGIN E_CIVIL_fieldblock}		
+	<div class="container {$fielddispclass_E_CIVIL}" data-fieldname="E_CIVIL">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label propietario E_CIVIL}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_E_CIVIL}
+			</div>
+			<div class="col-md-4" >
+				{$E_CIVIL_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$E_CIVIL_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END E_CIVIL_fieldblock}
+	{BEGIN PARIENTE_fieldblock}		
+	<div class="container {$fielddispclass_PARIENTE}" data-fieldname="PARIENTE">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label propietario PARIENTE}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_PARIENTE}
+			</div>
+			<div class="col-md-4" >
+				{$PARIENTE_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$PARIENTE_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END PARIENTE_fieldblock}
+	{BEGIN NOMBRE_PARIENTE_fieldblock}		
+	<div class="container {$fielddispclass_NOMBRE_PARIENTE}" data-fieldname="NOMBRE_PARIENTE">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label propietario NOMBRE_PARIENTE}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_NOMBRE_PARIENTE}
+			</div>
+			<div class="col-md-4" >
+				{$NOMBRE_PARIENTE_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$NOMBRE_PARIENTE_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END NOMBRE_PARIENTE_fieldblock}
+	{BEGIN IDENTIFICACION_fieldblock}		
+	<div class="container {$fielddispclass_IDENTIFICACION}" data-fieldname="IDENTIFICACION">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label propietario IDENTIFICACION}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_IDENTIFICACION}
+			</div>
+			<div class="col-md-4" >
+				{$IDENTIFICACION_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$IDENTIFICACION_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END IDENTIFICACION_fieldblock}
+	{BEGIN TEL_PARIENTE_fieldblock}		
+	<div class="container {$fielddispclass_TEL_PARIENTE}" data-fieldname="TEL_PARIENTE">
+		<div class="form-group">
+			<div class="col-md-2">
+				{$label propietario TEL_PARIENTE}
+			</div>
+			<div class="col-md-2" >
+				{$searchtype_TEL_PARIENTE}
+			</div>
+			<div class="col-md-4" >
+				{$TEL_PARIENTE_editcontrol}
+			</div>
+			<div class="col-md-4" >
+				{$TEL_PARIENTE_editcontrol1}
+			</div>
+		</div>
+	</div>
+{END TEL_PARIENTE_fieldblock}
+</div>
+
+
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_bottombuttons}
+<div {$bottombuttons_chiddenattr} data-pageid="{$pageid}" data-container="bottombuttons" class="container    "> 
+
+
+
+
+{BEGIN container_leftbuttons}
+<div {$leftbuttons_chiddenattr} data-pageid="{$pageid}" data-container="leftbuttons" class="   col-md-3 col-md-offset-4"> 
+
+{BEGIN searchbuttons}
+{BEGIN search_button}
+<button class="btn btn-primary" {$searchbutton_attrs}>Buscar</button>
+{END search_button} 
+{BEGIN reset_button}
+<button class="btn btn-default" {$resetbutton_attrs}>Reiniciar</button>
+{END reset_button}
+{BEGIN back_button}
+<button class="btn btn-default" {$backbutton_attrs}>Volver a la lista</button>
+{END back_button}
+{END searchbuttons}
+
+
+
+</div>
+{END container_leftbuttons}
+
+
+
+
+
+
+</div>
+{END container_bottombuttons}
+
+
+		</div>
+		<div class="bs-middle ">
+			<div class="bs-topmiddle">
+				
+			</div>
+			<div class="bs-left" {$blockattr_left}>
+				
+			</div>
+			<div class="bs-center">
+				
+			</div>
+			<div class="bs-right">
+				
+			</div>
+		</div>
+		<DIV class="bs-bottom">
+        
+		</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

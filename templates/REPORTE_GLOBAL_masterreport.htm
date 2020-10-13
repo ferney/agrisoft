@@ -1,0 +1,220 @@
+<div {$pageattrs}>
+
+{BEGIN container_column}
+<div class="rnr-c rnr-ch rnr-c-column">
+
+{BEGIN masterlist_title}
+<div  class="style1 rnr-bl rnr-b-masterlistheader {$brickclass_masterlistheader}"><span>{$pagetitlelabel REPORTE_GLOBAL masterreport}</span></div>
+{END masterlist_title}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_column}
+
+
+
+{BEGIN container_mastergrid}
+
+
+
+	<style>
+	.bs-gridcell[data-field=PROPIETARIO_CEDULA]:before {
+		content: "{$label REPORTE_GLOBAL PROPIETARIO_CEDULA}";
+	}
+	.bs-gridcell[data-field=NOMBRE]:before {
+		content: "{$label REPORTE_GLOBAL NOMBRE}";
+	}
+	.bs-gridcell[data-field=VEREDA]:before {
+		content: "{$label REPORTE_GLOBAL VEREDA}";
+	}
+	.bs-gridcell[data-field=FINCA]:before {
+		content: "{$label REPORTE_GLOBAL FINCA}";
+	}
+	.bs-gridcell[data-field=AREA_FINCA]:before {
+		content: "{$label REPORTE_GLOBAL AREA_FINCA}";
+	}
+	.bs-gridcell[data-field=LINEA_PRINCIPAL]:before {
+		content: "{$label REPORTE_GLOBAL LINEA_PRINCIPAL}";
+	}
+	.bs-gridcell[data-field=AREA__L_P]:before {
+		content: "{$label REPORTE_GLOBAL AREA__L_P}";
+	}
+	.bs-gridcell[data-field=A_O]:before {
+		content: "{$label REPORTE_GLOBAL A_O}";
+	}
+	.bs-gridcell[data-field=LINEAS_AGRARIAS]:before {
+		content: "{$label REPORTE_GLOBAL LINEAS_AGRARIAS}";
+	}
+	.bs-gridcell[data-field=VARIEDAD]:before {
+		content: "{$label REPORTE_GLOBAL VARIEDAD}";
+	}
+	.bs-gridcell[data-field=AREA]:before {
+		content: "{$label REPORTE_GLOBAL AREA}";
+	}
+	.bs-gridcell[data-field=PRODUCCION_ANUAL]:before {
+		content: "{$label REPORTE_GLOBAL PRODUCCION_ANUAL}";
+	}
+	.bs-gridcell[data-field=A_O1]:before {
+		content: "{$label REPORTE_GLOBAL A_O1}";
+	}
+	.bs-gridcell[data-field=VARIEDAD_AGRICOLA]:before {
+		content: "{$label REPORTE_GLOBAL VARIEDAD_AGRICOLA}";
+	}
+	.bs-gridcell[data-field=AREA1]:before {
+		content: "{$label REPORTE_GLOBAL AREA1}";
+	}
+	.bs-gridcell[data-field=PRODUCCION_ANUAL1]:before {
+		content: "{$label REPORTE_GLOBAL PRODUCCION_ANUAL1}";
+	}
+	.bs-gridcell[data-field=A_O2]:before {
+		content: "{$label REPORTE_GLOBAL A_O2}";
+	}
+	.bs-gridcell[data-field=RAZA_PECUARIO]:before {
+		content: "{$label REPORTE_GLOBAL RAZA_PECUARIO}";
+	}
+	.bs-gridcell[data-field=U_A]:before {
+		content: "{$label REPORTE_GLOBAL U_A}";
+	}
+	.bs-gridcell[data-field=AREA2]:before {
+		content: "{$label REPORTE_GLOBAL AREA2}";
+	}
+	.bs-gridcell[data-field=PRODUCCION_ANUAL2]:before {
+		content: "{$label REPORTE_GLOBAL PRODUCCION_ANUAL2}";
+	}
+	.bs-gridcell[data-field=A_O3]:before {
+		content: "{$label REPORTE_GLOBAL A_O3}";
+	}
+	.bs-gridcell[data-field=VARIEDAD_HORTIFRUTICOLA]:before {
+		content: "{$label REPORTE_GLOBAL VARIEDAD_HORTIFRUTICOLA}";
+	}
+	.bs-gridcell[data-field=AREA3]:before {
+		content: "{$label REPORTE_GLOBAL AREA3}";
+	}
+	.bs-gridcell[data-field=PRODUCCION_ANUAL3]:before {
+		content: "{$label REPORTE_GLOBAL PRODUCCION_ANUAL3}";
+	}
+	.bs-gridcell[data-field=A_O4]:before {
+		content: "{$label REPORTE_GLOBAL A_O4}";
+	}
+	.bs-gridcell[data-field=TENENCIA_LEGAL]:before {
+		content: "{$label REPORTE_GLOBAL TENENCIA_LEGAL}";
+	}
+	.bs-gridcell[data-field=SOPORTE]:before {
+		content: "{$label REPORTE_GLOBAL SOPORTE}";
+	}
+	.bs-gridcell[data-field=RUAT]:before {
+		content: "{$label REPORTE_GLOBAL RUAT}";
+	}
+	.bs-gridcell[data-field=ASOCIACION]:before {
+		content: "{$label REPORTE_GLOBAL ASOCIACION}";
+	}
+	.bs-gridcell[data-field=OBSERVACIONES]:before {
+		content: "{$label REPORTE_GLOBAL OBSERVACIONES}";
+	}
+	.bs-gridcell[data-field=A_O5]:before {
+		content: "{$label REPORTE_GLOBAL A_O5}";
+	}
+	.bs-gridcell[data-field=TIPO_INVERSION]:before {
+		content: "{$label REPORTE_GLOBAL TIPO_INVERSION}";
+	}
+	.bs-gridcell[data-field=NOMBRE_PROYECTO]:before {
+		content: "{$label REPORTE_GLOBAL NOMBRE_PROYECTO}";
+	}
+	.bs-gridcell[data-field=OBSERVACIONES1]:before {
+		content: "{$label REPORTE_GLOBAL OBSERVACIONES1}";
+	}
+	.bs-gridcell[data-field=A_O6]:before {
+		content: "{$label REPORTE_GLOBAL A_O6}";
+	}
+</style>
+<table {$masterlistgrid_hiddenattr} data-pageid="{$pageid}" data-brick="masterlistgrid" class="table rnr-b-mastergridfields rnr-gridtable bs-flexgrid" >
+		<thead>
+		<tr>
+			<th class="{$PROPIETARIO_CEDULA_class}">{$label REPORTE_GLOBAL PROPIETARIO_CEDULA}</th>
+			<th class="{$NOMBRE_class}">{$label REPORTE_GLOBAL NOMBRE}</th>
+			<th class="{$VEREDA_class}">{$label REPORTE_GLOBAL VEREDA}</th>
+			<th class="{$FINCA_class}">{$label REPORTE_GLOBAL FINCA}</th>
+			<th class="{$AREA_FINCA_class}">{$label REPORTE_GLOBAL AREA_FINCA}</th>
+			<th class="{$LINEA_PRINCIPAL_class}">{$label REPORTE_GLOBAL LINEA_PRINCIPAL}</th>
+			<th class="{$AREA__L_P_class}">{$label REPORTE_GLOBAL AREA__L_P}</th>
+			<th class="{$A_O_class}">{$label REPORTE_GLOBAL A_O}</th>
+			<th class="{$LINEAS_AGRARIAS_class}">{$label REPORTE_GLOBAL LINEAS_AGRARIAS}</th>
+			<th class="{$VARIEDAD_class}">{$label REPORTE_GLOBAL VARIEDAD}</th>
+			<th class="{$AREA_class}">{$label REPORTE_GLOBAL AREA}</th>
+			<th class="{$PRODUCCION_ANUAL_class}">{$label REPORTE_GLOBAL PRODUCCION_ANUAL}</th>
+			<th class="{$A_O1_class}">{$label REPORTE_GLOBAL A_O1}</th>
+			<th class="{$VARIEDAD_AGRICOLA_class}">{$label REPORTE_GLOBAL VARIEDAD_AGRICOLA}</th>
+			<th class="{$AREA1_class}">{$label REPORTE_GLOBAL AREA1}</th>
+			<th class="{$PRODUCCION_ANUAL1_class}">{$label REPORTE_GLOBAL PRODUCCION_ANUAL1}</th>
+			<th class="{$A_O2_class}">{$label REPORTE_GLOBAL A_O2}</th>
+			<th class="{$RAZA_PECUARIO_class}">{$label REPORTE_GLOBAL RAZA_PECUARIO}</th>
+			<th class="{$U_A_class}">{$label REPORTE_GLOBAL U_A}</th>
+			<th class="{$AREA2_class}">{$label REPORTE_GLOBAL AREA2}</th>
+			<th class="{$PRODUCCION_ANUAL2_class}">{$label REPORTE_GLOBAL PRODUCCION_ANUAL2}</th>
+			<th class="{$A_O3_class}">{$label REPORTE_GLOBAL A_O3}</th>
+			<th class="{$VARIEDAD_HORTIFRUTICOLA_class}">{$label REPORTE_GLOBAL VARIEDAD_HORTIFRUTICOLA}</th>
+			<th class="{$AREA3_class}">{$label REPORTE_GLOBAL AREA3}</th>
+			<th class="{$PRODUCCION_ANUAL3_class}">{$label REPORTE_GLOBAL PRODUCCION_ANUAL3}</th>
+			<th class="{$A_O4_class}">{$label REPORTE_GLOBAL A_O4}</th>
+			<th class="{$TENENCIA_LEGAL_class}">{$label REPORTE_GLOBAL TENENCIA_LEGAL}</th>
+			<th class="{$SOPORTE_class}">{$label REPORTE_GLOBAL SOPORTE}</th>
+			<th class="{$RUAT_class}">{$label REPORTE_GLOBAL RUAT}</th>
+			<th class="{$ASOCIACION_class}">{$label REPORTE_GLOBAL ASOCIACION}</th>
+			<th class="{$OBSERVACIONES_class}">{$label REPORTE_GLOBAL OBSERVACIONES}</th>
+			<th class="{$A_O5_class}">{$label REPORTE_GLOBAL A_O5}</th>
+			<th class="{$TIPO_INVERSION_class}">{$label REPORTE_GLOBAL TIPO_INVERSION}</th>
+			<th class="{$NOMBRE_PROYECTO_class}">{$label REPORTE_GLOBAL NOMBRE_PROYECTO}</th>
+			<th class="{$OBSERVACIONES1_class}">{$label REPORTE_GLOBAL OBSERVACIONES1}</th>
+			<th class="{$A_O6_class}">{$label REPORTE_GLOBAL A_O6}</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td class="{$PROPIETARIO_CEDULA_class} bs-gridcell" data-field=PROPIETARIO_CEDULA>{$PROPIETARIO_CEDULA_mastervalue}</td>
+			<td class="{$NOMBRE_class} bs-gridcell" data-field=NOMBRE>{$NOMBRE_mastervalue}</td>
+			<td class="{$VEREDA_class} bs-gridcell" data-field=VEREDA>{$VEREDA_mastervalue}</td>
+			<td class="{$FINCA_class} bs-gridcell" data-field=FINCA>{$FINCA_mastervalue}</td>
+			<td class="{$AREA_FINCA_class} bs-gridcell" data-field=AREA_FINCA>{$AREA_FINCA_mastervalue}</td>
+			<td class="{$LINEA_PRINCIPAL_class} bs-gridcell" data-field=LINEA_PRINCIPAL>{$LINEA_PRINCIPAL_mastervalue}</td>
+			<td class="{$AREA__L_P_class} bs-gridcell" data-field=AREA__L_P>{$AREA__L_P_mastervalue}</td>
+			<td class="{$A_O_class} bs-gridcell" data-field=A_O>{$A_O_mastervalue}</td>
+			<td class="{$LINEAS_AGRARIAS_class} bs-gridcell" data-field=LINEAS_AGRARIAS>{$LINEAS_AGRARIAS_mastervalue}</td>
+			<td class="{$VARIEDAD_class} bs-gridcell" data-field=VARIEDAD>{$VARIEDAD_mastervalue}</td>
+			<td class="{$AREA_class} bs-gridcell" data-field=AREA>{$AREA_mastervalue}</td>
+			<td class="{$PRODUCCION_ANUAL_class} bs-gridcell" data-field=PRODUCCION_ANUAL>{$PRODUCCION_ANUAL_mastervalue}</td>
+			<td class="{$A_O1_class} bs-gridcell" data-field=A_O1>{$A_O1_mastervalue}</td>
+			<td class="{$VARIEDAD_AGRICOLA_class} bs-gridcell" data-field=VARIEDAD_AGRICOLA>{$VARIEDAD_AGRICOLA_mastervalue}</td>
+			<td class="{$AREA1_class} bs-gridcell" data-field=AREA1>{$AREA1_mastervalue}</td>
+			<td class="{$PRODUCCION_ANUAL1_class} bs-gridcell" data-field=PRODUCCION_ANUAL1>{$PRODUCCION_ANUAL1_mastervalue}</td>
+			<td class="{$A_O2_class} bs-gridcell" data-field=A_O2>{$A_O2_mastervalue}</td>
+			<td class="{$RAZA_PECUARIO_class} bs-gridcell" data-field=RAZA_PECUARIO>{$RAZA_PECUARIO_mastervalue}</td>
+			<td class="{$U_A_class} bs-gridcell" data-field=U_A>{$U_A_mastervalue}</td>
+			<td class="{$AREA2_class} bs-gridcell" data-field=AREA2>{$AREA2_mastervalue}</td>
+			<td class="{$PRODUCCION_ANUAL2_class} bs-gridcell" data-field=PRODUCCION_ANUAL2>{$PRODUCCION_ANUAL2_mastervalue}</td>
+			<td class="{$A_O3_class} bs-gridcell" data-field=A_O3>{$A_O3_mastervalue}</td>
+			<td class="{$VARIEDAD_HORTIFRUTICOLA_class} bs-gridcell" data-field=VARIEDAD_HORTIFRUTICOLA>{$VARIEDAD_HORTIFRUTICOLA_mastervalue}</td>
+			<td class="{$AREA3_class} bs-gridcell" data-field=AREA3>{$AREA3_mastervalue}</td>
+			<td class="{$PRODUCCION_ANUAL3_class} bs-gridcell" data-field=PRODUCCION_ANUAL3>{$PRODUCCION_ANUAL3_mastervalue}</td>
+			<td class="{$A_O4_class} bs-gridcell" data-field=A_O4>{$A_O4_mastervalue}</td>
+			<td class="{$TENENCIA_LEGAL_class} bs-gridcell" data-field=TENENCIA_LEGAL>{$TENENCIA_LEGAL_mastervalue}</td>
+			<td class="{$SOPORTE_class} bs-gridcell" data-field=SOPORTE>{$SOPORTE_mastervalue}</td>
+			<td class="{$RUAT_class} bs-gridcell" data-field=RUAT>{$RUAT_mastervalue}</td>
+			<td class="{$ASOCIACION_class} bs-gridcell" data-field=ASOCIACION>{$ASOCIACION_mastervalue}</td>
+			<td class="{$OBSERVACIONES_class} bs-gridcell" data-field=OBSERVACIONES>{$OBSERVACIONES_mastervalue}</td>
+			<td class="{$A_O5_class} bs-gridcell" data-field=A_O5>{$A_O5_mastervalue}</td>
+			<td class="{$TIPO_INVERSION_class} bs-gridcell" data-field=TIPO_INVERSION>{$TIPO_INVERSION_mastervalue}</td>
+			<td class="{$NOMBRE_PROYECTO_class} bs-gridcell" data-field=NOMBRE_PROYECTO>{$NOMBRE_PROYECTO_mastervalue}</td>
+			<td class="{$OBSERVACIONES1_class} bs-gridcell" data-field=OBSERVACIONES1>{$OBSERVACIONES1_mastervalue}</td>
+			<td class="{$A_O6_class} bs-gridcell" data-field=A_O6>{$A_O6_mastervalue}</td>
+		</tr>
+	</tbody>
+
+</table> 
+
+
+
+
+{END container_mastergrid}
+
+</div>
